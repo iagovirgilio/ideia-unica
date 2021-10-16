@@ -4,9 +4,16 @@ function Home() {
     return (
             <div>
                 <h2>Home</h2>
-                <Contador />
+                <CapsLock>me deixe em capslock, por favor!</CapsLock>
+                <Contador/>
             </div>
         )
+}
+
+function CapsLock(props) {
+    const textoInserido = props.children;
+    const textoEmCapsLock = textoInserido.toUpperCase();
+    return <div>{textoEmCapsLock}</div>
 }
 
 function Contador() {
