@@ -1,6 +1,10 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Home() {
+    useEffect(() => {
+        document.title = 'Home';
+    });
+
     return (
             <div>
                 <h2>Home</h2>
